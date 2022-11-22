@@ -35,12 +35,12 @@ class DeckOfCardsTest {
     }
 
     @Test
-    void testDealOneCardUntilDeckEmpty(){
+    void testDealOneCardUntilDeckEmpty() {
         DeckOfCards deck = new DeckOfCards();
         int initDeckSize = deck.size();
         int qtyDealtCards = 0;
         // count how many call
-        while(!deck.getCards().isEmpty()){
+        while (!deck.getCards().isEmpty()) {
             Card dealt = deck.dealOneCard();
             assertNotNull(dealt, "Dealt card is initialized");
             qtyDealtCards++; //  count the amount of cards dealt

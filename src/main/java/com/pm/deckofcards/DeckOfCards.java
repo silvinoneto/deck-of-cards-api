@@ -1,16 +1,17 @@
 package com.pm.deckofcards;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
 /**
  * The Deck of Cards
  */
-public class DeckOfCards {
+public class DeckOfCards implements Serializable {
 
     private List<Card> cards = new ArrayList<>();
 
-    DeckOfCards() {
+    public DeckOfCards() {
         initStandardDeck();
     }
 
@@ -31,7 +32,7 @@ public class DeckOfCards {
      *
      * @return the first card in the deck
      */
-    synchronized Card dealOneCard() {
+    public synchronized Card dealOneCard() {
         Card card = null;
         if (!cards.isEmpty()) {
             card = this.cards.get(0); // return the first card
@@ -44,7 +45,7 @@ public class DeckOfCards {
      * Shuffle the deck.
      * All the cards in the deck are randomly permuted.
      */
-    synchronized void shuffle() {
+    public synchronized void shuffle() {
         // randomly shuffle the deck
 
         // create a secondary deck for the shuffled cards

@@ -1,0 +1,103 @@
+{
+	"info": {
+		"_postman_id": "9336b6d5-d89a-4835-893e-70201a201436",
+		"name": "deckofcards-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24486829"
+	},
+	"item": [
+		{
+			"name": "deck size",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/deckofcards/size",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"deckofcards",
+						"size"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "show deck",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/deckofcards",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"deckofcards"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create deck",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/deckofcards",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"deckofcards"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "shuffle deck",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/deckofcards/shuffle",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"deckofcards",
+						"shuffle"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deal one card",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/deckofcards/dealone",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"deckofcards",
+						"dealone"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

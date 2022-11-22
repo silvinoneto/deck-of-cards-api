@@ -1,8 +1,9 @@
 package com.pm.deckofcards;
 
+import java.io.Serializable;
 import java.util.Objects;
 
-public class Card {
+public class Card implements Serializable {
     CardSuit suit;
     CardRank rank;
 

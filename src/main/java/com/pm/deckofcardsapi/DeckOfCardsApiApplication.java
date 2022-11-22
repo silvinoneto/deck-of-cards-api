@@ -6,8 +6,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class DeckOfCardsApiApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(DeckOfCardsApiApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(DeckOfCardsApiApplication.class, args);
+    }
 
 }
